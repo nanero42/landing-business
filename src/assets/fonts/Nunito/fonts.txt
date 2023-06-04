@@ -1,0 +1,5 @@
+400 - regular
+500 - medium
+600 - semibold
+700 - bold
+800 - extrabold
