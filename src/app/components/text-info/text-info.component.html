@@ -4,7 +4,14 @@
     <p class="text-info__text">{{ paragraphText }}</p>
   </div>
   <div *ngIf="primaryButtonText || strokedButtonText" class="text-info__buttons">
-    <button *ngIf="primaryButtonText" mat-raised-button color="primary" class="text-info__button">{{ primaryButtonText }}</button>
+    <button
+      *ngIf="primaryButtonText"
+      mat-raised-button color="primary"
+      class="text-info__button"
+      [ngStyle]="primaryButtonstyle"
+    >
+      {{ primaryButtonText }}
+    </button>
     <button *ngIf="strokedButtonText" mat-stroked-button color="primary" class="text-info__button text-info__button_stroked">
       <div class="dfcc">
         <span class="text-info__button-text">{{ strokedButtonText }}</span>
