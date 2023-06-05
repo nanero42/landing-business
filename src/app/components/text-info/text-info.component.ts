@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 
@@ -9,6 +9,12 @@ import { DomSanitizer } from '@angular/platform-browser';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TextInfoComponent {
+  @Input() titleText = '';
+  @Input() paragraphText = '';
+  @Input() primaryButtonText = '';
+  @Input() strokedButtonText = '';
+  @Input() showStrokedButtonIcon = false;
+
   constructor(
     private matIconRegistry: MatIconRegistry,
     private domSanitizer: DomSanitizer,
