@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TextInfoComponent } from './text-info/text-info.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -9,7 +12,10 @@ import { TextInfoComponent } from './text-info/text-info.component';
     TextInfoComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatButtonModule,
+    MatIconModule,
+    HttpClientModule,
   ],
   exports: [
     TextInfoComponent,
