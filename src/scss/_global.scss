@@ -1,0 +1,7 @@
+.gl {
+
+  &__container {
+    width: clamp(450px, 100%, 1480px);
+    margin: 0 auto;
+  }
+}
